@@ -1,6 +1,6 @@
 @extends('student')
 
 @section('content')
-    <h1>Student Home </h1>
+<h1>Welcome {{Auth::user()->name}}! </h1>
 
 @stop

@@ -31,5 +31,10 @@ class Student extends Model {
     {
         return $this->belongsToMany('App\Module','module_id');
     }
+	
+	public function transactions()
+	{
+		return $this->hasMany('App\Transaction','student_id'); 
+	}
 
 }

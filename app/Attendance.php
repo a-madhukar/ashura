@@ -7,11 +7,15 @@ class Attendance extends Model {
 	//
     
     protected $fillable = [
-        'module_id',
+		'class_id',
         'student_id',
-        'attendance_date',
         'attendance'
     ];
+	
+	public function studentclasses()
+	{
+		return $this->belongsTo('App\StudentClass','class_id'); 
+	}
     
     
 

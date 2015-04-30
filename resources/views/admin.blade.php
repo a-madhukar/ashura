@@ -61,7 +61,7 @@
                         <p class="panel-header"> Faculty </p>
                         <ul>
                             <li><a href="{{url('admin/faculty/add')}}">Add New Faculty </a> </li>
-                            <li><a href="#">View Faculty </a> </li>
+                            <li><a href="{{url('admin/faculty/view')}}">View Faculty </a> </li>
                         </ul>
                    
                     
@@ -69,7 +69,7 @@
                         <p class="panel-header"> Course </p>
                         <ul>
                             <li><a href="{{url('admin/course/add')}}">Add New Course </a> </li>
-                            <li><a href="#">View Course </a> </li>
+                            <li><a href="{{url('admin/course/view')}}">View Course </a> </li>
                         </ul>
                     
                     
@@ -77,25 +77,30 @@
                         <p class="panel-header"> Module </p>
                         <ul>
                             <li><a href="{{url('admin/module/add')}}">Add New Module </a> </li>
-                            <li><a href="#">Search Module </a> </li>
+                            <li><a href="{{url('admin/module/view')}}">View Modules </a> </li>
                         </ul>
                         
                    
                        <p class="panel-header"> Lecturer </p>
                         <ul>
                             <li><a href="{{url('admin/lecturer/add')}}">Add New Lecturer </a> </li>
-                            <li><a href="#">Search Lecturer </a> </li>
+                            <li><a href="{{url('admin/lecturer/view')}}">View Lecturers </a> </li>
                         </ul>
                        
                      <p class="panel-header"> Student </p>
                         <ul>
                             <li><a href="{{url('admin/student/add')}}">Add New Student </a> </li>
-                            <li><a href="#">Search Student </a> </li>
+                            <li><a href="{{url('admin/student/view')}}">View Students </a> </li>
                         </ul>
-                    
+
+<p class="panel-header"> Docket </p>
+<ul>
+<li><a href="{{url('admin/docket/selects')}}">Generate Docket Number </a> </li>
+</ul>
+
                 </div>
             </div>
-            
+
             <div class="col-md-6">
                @yield('content') 
             </div>

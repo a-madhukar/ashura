@@ -7,24 +7,7 @@
    </div>
     
     {!!Form::open()!!}
-        <div class="form-group">
-            {!!Form::label('faculty_id','Faculty :')!!}
-            {!!Form::select('faculty_id',$faculty,null,['class'=>'form-control'])!!}
-        </div>
-        
-        <div class="form-group">
-            {!!Form::label('course_type_id','Course Type :') !!}
-            {!!Form::select('course_type_id',$type, null,['class'=>'form-control']) !!}
-        </div>
-        
-        <div class="form-group">
-            {!!Form::label('course_name','Course Name :') !!}
-            {!!Form::text('course_name',null,['class'=>'form-control'])!!}
-        </div>
-    
-        <div class="form-group">
-            {!!Form::submit('Add Course',['class'=>'btn btn-primary form-control']) !!}
-        </div>
+@include('admin._courseForm',['button'=>'Add Course'])
     {!!Form::close() !!}
 </div>
     

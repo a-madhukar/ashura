@@ -44,7 +44,10 @@ class HomeController extends Controller {
           }elseif($user['user_roles_id']==='3') 
           {
               return redirect('student/home'); 
-          }
+          }elseif($user['user_roles_id']==='4')
+		   {
+			   return redirect('parent/home'); 
+		   }
          
        }else
        {

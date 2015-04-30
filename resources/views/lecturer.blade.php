@@ -59,7 +59,7 @@
                         <p class="panel-header"> Attendance </p>
                         <ul>
                             <li><a href="{{url('lecturer/attendance/course')}}">Mark Attendance</a> </li>
-                            <li><a href="#">View Faculty </a> </li>
+                            <li><a href="{{url('lecturer/attendance/selectcourse')}}">View Attendance </a> </li>
                         </ul>
                    
                 </div>

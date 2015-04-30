@@ -19,5 +19,10 @@ class Module extends Model {
     {
         return $this->hasMany('App\Student','student_id'); 
     }
+	
+	public function studentclasses()
+	{
+		return $this->hasMany('App\StudentClass','module_id'); 
+	}
 
 }

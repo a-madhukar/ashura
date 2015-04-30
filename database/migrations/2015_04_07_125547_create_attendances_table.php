@@ -15,14 +15,11 @@ class CreateAttendancesTable extends Migration {
 		Schema::create('attendances', function(Blueprint $table)
 		{
 			$table->increments('id');
-                       $table->integer('module_id')->unsigned();
-                       $table->foreign('module_id')->references('id')->on('modules')->onDelete('cascade');
+                       $table->integer('class_id')->unsigned();
+                       $table->foreign('class_id')->references('id')->on('student_classes')->onDelete('cascade');
                        
                        $table->integer('student_id')->unsigned();
                        $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
-                       
-                       $table->date('attendance_date');
-                       
                        $table->string('attendance');
                        
                        
